@@ -12,6 +12,13 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until `.macos` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+
+###############################################################################
+# App alias                                                               #
+###############################################################################
+# Sublime
+ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/sl 
+
 ###############################################################################
 # General UI/UX                                                               #
 ###############################################################################
